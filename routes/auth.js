@@ -1,11 +1,11 @@
 const express = require('express')
-const authRoutes = express.Router()
+const AuthRoutes = express.Router()
 
-authRoutes.get('/login', (req, res) => {
+AuthRoutes.get('/auth/login', (req, res) => {
     res.send('User Logged in')
 })
-authRoutes.get('/signup', (req, res) => {
-    res.send('User sigend up')
+AuthRoutes.get('/signup', (req, res) => {
+    res.send('User sigend in')
 })
 
-module.exports = authRoutes;
+module.exports = AuthRoutes;
