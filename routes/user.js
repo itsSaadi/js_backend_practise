@@ -8,7 +8,7 @@ UserRoutes.get('/testUrl', (req, res) => {
         "name": "saad"
     })
 })
-UserRoutes.get('/', user.home)
+UserRoutes.get('/home', user.home)
 UserRoutes.get('/about', user.about)
 
 module.exports = UserRoutes
